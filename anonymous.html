@@ -1,0 +1,1 @@
+parallax = document.querySelectorAll('.parallax-image') speed = 0.5 window.onscroll = -> [].slice.call(parallax).forEach (el, i) -> dist = $(window).scrollTop() - $(el).offset().top $(el).css('top', (dist * speed + 'px'))
